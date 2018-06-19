@@ -165,13 +165,23 @@ header li:last-child{
 
 /* NEWSLETTER */
 .newsletter {display: flex; flex-direction: column; align-items: center; padding: 50px;}
-.newsletter h3 {font-size: 2rem; margin-bottom: 35px; color: #0d6791; text-align: center;}
+.newsletter h3 {font-size: 2rem; margin-top: 50px; margin-bottom: 35px; color: #0d6791; text-align: center;}
 .newsletter p {max-width: 800px; margin-bottom: 35px; text-align: center; color: #0d6791;}
 .newsletter hr {width: 200px; height: 2px; background-color: #0d6791; border: none; margin-bottom: 50px;}
 
 .newsletter form {display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 80%; max-width: 800px;}
 .newsletter input {padding: 15px; border: 1px solid #0d6791; border-radius: 5px; margin-right: 15px; flex: 1;}
-.newsletter button {color: #0d6791; padding: 15px; background-color: #fff; border: 1px solid #0d6791; border-radius: 5px; text-transform: uppercase;}
+.newsletter button {color: #fff; padding: 15px; background-color: #0d6791; border: none; border-radius: 5px; text-transform: uppercase;}
 @media (max-width: 850px) {
     .newsletter input {flex-basis: 100%; margin-bottom: 15px;}
 }
+
+
+/*FOOTER */
+
+footer {display: flex; flex-direction: column; background-color: #222; padding: 50px 0; margin-top: 50px; align-items: center;}
+footer ul {display: flex; margin-bottom: 25px;}
+footer ul li {margin-right: 10px;}
+footer ul li:last-child {margin-right: 0;}
+footer ul li a {color: #fff; font-size: 2rem;}
+footer p {color: #fff; text-align: center;}
