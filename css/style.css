@@ -1,0 +1,189 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a{text-decoration: none; cursor: pointer; opacity: 0.9;}
+a:hover {
+    opacity: 1;
+}
+
+
+/* HEADER */
+header {
+
+    background: linear-gradient(-90deg,#a550f5, #0d6791cc); 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+header img {
+
+    box-shadow: 5px 5px 10px #222;
+    border-radius: 20px;
+}
+
+header nav {
+
+    display: flex;
+}
+
+header li a {
+
+    color: #d4e7ec;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li:first-child{
+
+    margin-left: 0;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+@media (max-width: 700px){
+
+    header{flex-direction: column;}
+    header img{margin-bottom: 15px;}
+}
+
+/* HERO */
+
+.hero {
+
+    background-image: url(../img/picsea-357048-unsplash.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.hero h1 {
+
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    margin-top: 250px;
+    text-shadow: 5px 5px 10px #444;
+}
+
+.hero h3 {
+
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 5px 5px 10px #444;
+}
+
+.hero .btn {
+
+    background-color: #fff;
+    border-radius: 5px;
+    color: #0899bd;
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+
+    .hero h1 {font-size: 2rem;}
+    .hero h3 {font-size: 1.5rem;}
+    header img {margin-bottom: 15px;}
+}
+
+
+/* CONHEÇA A LUMEIA_ */
+
+.conheca-a-lumeia {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.conheca-a-lumeia h3 {
+
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #a550f5;
+    text-align: center;
+}
+
+.conheca-a-lumeia p {
+
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.conheca-a-lumeia hr {
+
+    width: 200px;
+    height: 2px;
+    background-color: #a550f5;
+    border: none;
+}
+
+.conheca-a-lumeia .grid {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conheca-a-lumeia .grid li {
+
+    height: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.conheca-a-lumeia .grid li.small {
+    flex-basis: 40%;
+}
+.conheca-a-lumeia .grid li.large {
+    flex-basis: 60%;
+}
+
+
+
+
+@media (max-width:700px) {
+
+    .conheca-a-lumeia{padding: 0; margin: 30px 0;}
+    .conheca-a-lumeia h3 {font-size: 1.5; text-align: left;}
+    .conheca-a-lumeia .grid li.small, .conheca-a-lumeia .grid li.large{
+        flex-basis: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+}
